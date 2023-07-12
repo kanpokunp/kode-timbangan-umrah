@@ -26,5 +26,5 @@ void loop() { //loop yang terus berjalan ketika arduino board digunakan
   Serial.print(berat);
   Serial.println(" kilogram");
   
-  delay(1000);  // Tunggu sekitar 1 detik sebelum melakukan pengukuran berikutnya. untuk mengetes
+  delay(1000);  // Tunggu sekitar 1 detik sebelum melakukan pengukuran berikutnya.
 }
