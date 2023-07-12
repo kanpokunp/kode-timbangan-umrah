@@ -23,7 +23,7 @@ void loop() { //loop yang terus berjalan ketika arduino board digunakan
 
   // output hasil nilai berat ke monitor (melalui Command Line Interface)
   Serial.print("Berat: ");
-  Serial.print(berat);
+  Serial.print(berat, 2); //tampilkan sebagai desimal dua digit
   Serial.println(" kilogram");
   
   delay(1000);  // Tunggu sekitar 1 detik sebelum melakukan pengukuran berikutnya.
