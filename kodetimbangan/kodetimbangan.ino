@@ -1,5 +1,6 @@
 // Inisialisasikan Library HX711 sebelum Startup. 
-//Download dulu Library HX711 melalui Sketch > Include Libraries > Manage Libraries. cari "HX711 by Bogdan Necula" lalu install versi 0.7.5
+//Download dulu Library HX711 melalui Sketch > Include Libraries > Manage Libraries. 
+//cari "HX711 by Bogdan Necula" lalu install versi 0.7.5
 #include <HX711.h>
 
 HX711 timbangan; // deklarasikan instance dari class HX711, bernama 'timbangan'.
@@ -18,7 +19,9 @@ void setup() { //setup board Arduino
 
 void loop() { //loop yang terus berjalan ketika arduino board digunakan
 
-  float berat = timbangan.get_units(); // baca nilai berat dari strain gauge, melalui HX711 Amplifier, berupa gram
+  // baca nilai berat dari strain gauge,
+  // melalui HX711 Amplifier, berupa gram
+  float berat = timbangan.get_units(); 
   berat /= 1000; //konversikan berat dari gram ke kilogram
 
   // output hasil nilai berat ke monitor (melalui Command Line Interface)
